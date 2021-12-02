@@ -1,0 +1,38 @@
+TO-DO */
+
+
+ 
+  ul {
+    margin: 0;
+    padding: 0;
+    margin-right: 125px;
+  }
+  
+  ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    list-style-type: none;
+    background:cyan;
+    font-size: 20px;
+    transition: 0.2s;
+    
+   
+  }
+  
+    
+  
+  
+  
+  
+  
+  ul #demo {
+      text-align: center;
+     margin-top: 25px;;
+      margin-left: 50px;
+      margin-right: 50px;
+      height: 500px;
+      overflow-y: scroll;
+      
+  }
+  

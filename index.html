@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+    <title>To Do List web App</title>
+</head>
+    <body>
+        <form class="login-form" name="myform" method="post">
+            
+          
+            <div class="container">
+              <label for="uname"><b>Username</b></label>
+              <input type="text" placeholder="Enter Username" id="uname" required>
+          <br>
+          <br>
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" id="psw" required>
+          <br>
+              <button type="submit" onclick="return validation(redirect);">Login</button>
+              </div>
+          </form> 
+   
+    <script>  
+    function validation(check) {
+    var u=document.forms["myform"]["uname"].value;
+    var p=document.forms["myform"]["psw"].value;
+    if(u == 'admin' && p == '12345') {
+    
+    check()
+    return false;
+    }
+    else
+    {
+    alert("Please check username or password");
+    window.location="index.html";
+    return false;
+    }
+    }
+    /*call back function*/
+    function redirect()
+    {
+        window.location="todo.html"
+    }
+
+
+
+    
+   
+
+     </script>  
+       </body>
+</html>
